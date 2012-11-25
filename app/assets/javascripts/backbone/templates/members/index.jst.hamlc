@@ -1,0 +1,8 @@
+.page-header
+  %h1 Участники
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Имя
+  %tbody

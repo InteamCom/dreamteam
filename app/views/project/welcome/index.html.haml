@@ -1,0 +1,10 @@
+%div#welcome
+  %p= @project.description
+%div#articles{ :style => "display:none" }
+%div#tasks{ :style => "display:none" }
+%div#activities{ :style => "display:none" }
+%div#members{ :style => "display:none" }
+%div#vacancies{ :style => "display:none" }
+
+:javascript
+  window.projectId = "#{@project.permalink}"

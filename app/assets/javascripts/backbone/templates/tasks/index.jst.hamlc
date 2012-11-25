@@ -1,0 +1,12 @@
+.page-header
+  %h1 Задачи
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Название
+      %th
+  %tbody
+
+
+%a{:href=>"#/tasks/new", :class => 'btn btn-primary'} Создать задачу

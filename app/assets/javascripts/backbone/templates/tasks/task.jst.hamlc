@@ -1,0 +1,7 @@
+%td
+  %a{:href=>"#/tasks/#{@id}"}= @name
+%td.actions
+  %a{:href=>"#/tasks/#{@id}/edit",    :class=>"btn btn-mini"}
+    %i{:class=>"icon-pencil"}
+  %a{:href=>"#/tasks/#{@id}/destroy", :class=>"btn btn-mini btn-danger destroy"}
+    %i{:class=>"icon-remove"}

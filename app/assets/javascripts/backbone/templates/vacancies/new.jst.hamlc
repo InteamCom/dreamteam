@@ -1,0 +1,23 @@
+.page-header
+  %h1 Новая Вакансия
+
+%form#new-vacancy.form-horizontal{:name => "vacancy"}
+  
+  / title
+  .control-group.string.optional
+    %label.string.optional.control-label{:for => "title"} Заголовок
+    .controls
+      %input#title{:name => "title", :type => "text", :value => @title}
+
+  / content
+  .control-group.text.optional
+    %label.text.optional.control-label{:for => "content"} Текст
+    .controls
+      %textarea#content.text.optional{:cols => "80", :name => "content", :rows => "10"}
+
+  / actions
+  .form-actions
+    %input{:type => "submit", :value => "Создать", :class => 'btn btn-primary'}
+    %a{:href=>"#/vacancies/index", :class=>"btn"}
+      Назад
+

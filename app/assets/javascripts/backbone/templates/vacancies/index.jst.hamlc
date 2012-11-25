@@ -1,0 +1,12 @@
+.page-header
+  %h1 Вакансии
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Название
+      %th
+  %tbody
+
+
+%a{:href=>"#/vacancies/new", :class => 'btn btn-primary'} Открыть вакансию

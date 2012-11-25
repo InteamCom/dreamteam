@@ -1,0 +1,24 @@
+.page-header
+  %h1 Создание Задачи
+
+%form#new-task.form-horizontal{:name => "task"}
+  
+  / title
+  .control-group.string.optional
+    %label.string.optional.control-label{:for => "name"} Заголовок
+    .controls
+      %input#title{:name => "name", :type => "text", :value => '#{@name}'}
+
+  / content
+  .control-group.text.optional
+    %label.text.optional.control-label{:for => "content"} Текст
+    .controls
+      %textarea#content.text.optional{:cols => "80", :name => "content", :rows => "10"}
+        = @content
+
+  / actions
+  .form-actions
+    %input{:type => "submit", :value => "Сохранить", :class => 'btn btn-primary'}
+    %a{:href=>"#/tasks/index", :class=>"btn"}
+      Назад
+

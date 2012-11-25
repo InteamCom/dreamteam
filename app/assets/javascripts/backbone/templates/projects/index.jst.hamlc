@@ -1,0 +1,7 @@
+%h1 Проекты
+
+%div#projects
+
+%br
+
+%a{ :href => "#/projects/new" } Новый проект
